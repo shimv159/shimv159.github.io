@@ -1,0 +1,70 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#7abae1,#ffacd4,#ffedb9);
+  font-family: 'PT Mono', monospace;
+  line-height: 1.3;
+  cursor: url('heartcursor.png'), pointer;
+}
+
+/* SCROLLING */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #faf1d0; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7abae1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7abae1; 
+}
+
+.body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.sidebar{
+  flex: 0.6;
+  order: 1;
+  background-color:#faf1d0;
+  height: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.sidebar .container {
+  height: 100%;
+  padding: 15%;
+}
+
+.content{
+  flex: 2;
+  order: 2;
+  height: 100vh;
+  overflow: auto;
+  padding:5%;
+  box-sizing: border-box;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+hr{
+  border: 1px solid #faf1d0;
+}

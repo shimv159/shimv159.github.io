@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #101010;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section, aside, div {
+  padding: 20px;
+  border-radius: 12px;
+}
+
+$medBlue: #2245ad;
+$magenta: #b8246b;
+$green: #0fa03f;
+
+@mixin bgGradient($color){
+  background-image: linear-gradient(lighten($color, 12%) 0%, $color 70%);  
+}
+
+.blue {
+  background-color: $medBlue;
+  @include bgGradient($medBlue);  
+}
+
+.magenta {
+  background-color: $magenta;
+  @include bgGradient($magenta);
+}
+
+.green {
+  background-color: $green;
+  @include bgGradient($green);
+}
+
+h1 { 
+  font-size: 4rem; 
+}
+
+h2 { 
+  font-size: 3rem; 
+}
+
+h1, h2, h3 {
+  margin-top: 0px;
+}
+
+.flex-container {
+  
+  @media(min-width: 56.25em);
+    display: flex;  
+  }
+  }
+}
+
+.main-content {
+  flex: 1;  
+}
+
+.sidebar {
+  flex: 0 0 300px;
+}

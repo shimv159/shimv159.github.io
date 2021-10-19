@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+}
+.one {
+  background: #efdefe;
+}
+.two {
+  background: #a3f3d3;
+}
+.three {
+  background: #0bbaa0;
+}
+.four {
+  background: #00dfdf;
+}
