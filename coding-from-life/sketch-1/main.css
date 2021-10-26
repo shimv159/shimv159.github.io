@@ -1,0 +1,518 @@
+/*
+  Coding from Life – Sketch 1: fixed layout
+
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
+*/
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 1000px;
+  height: 600px;
+  background: #99928e;
+  margin: 30px auto;
+  position: relative;
+}
+
+.frameleft{
+  width: 230px;
+  height: 600px;
+  position: absolute;
+  left: -230px;
+  top: 0px;
+  background: black;
+  z-index: 2;
+}
+
+.frameright{
+  width: 230px;
+  height: 600px;
+  position: absolute;
+  left: 1000px;
+  top: 0px;
+  background: black;
+  z-index: 2;
+}
+
+.frametop{
+  width: 1000px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  top: -95px;
+  background: black;
+  z-index: 3;
+}
+
+
+/* Your CSS goes here */
+.table{
+  width: 1100px;
+  height: 270px;
+  transform: skew(40deg);
+  background-color: #dcd6d2;
+  position: absolute;
+  bottom: 0;
+  left: -120px;
+}
+
+/* candle1 */
+
+.candle1 {
+  position: absolute;
+  top: 350px;
+  left: 50px;
+  z-index: 2;
+}
+
+.candletop1 {
+  height: 160px;
+  width: 40px;
+  background-color: #c39d62;
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+  top: -90px;
+  left: 55px;
+}
+
+.candlewhite1 {
+  height: 130px;
+  width: 40px;
+  background-color: mintcream;
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+  top: -210px;
+  left: 55px;
+}
+
+.candlestick1 {
+  width: 5px;
+  height: 40px;
+  position: absolute;
+  top: -240px;
+  left: 75px;
+  background: black;
+}
+
+.candlestem1 {
+  height: 170px;
+  width: 20px;
+  background-color: #91713a;
+  position: absolute;
+  top: 0;
+  left: 64px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.candlebottom1 {
+  width: 210px;
+  height: 75px;
+  background-color: #c39d62;
+  top: 140px;
+  left: -40px;
+  position: absolute;
+  border-radius: 50%;
+  transform: rotate(-5deg);
+}
+
+.candle2 {
+  position: absolute;
+  top: 350px;
+  left: 50px;
+  z-index: 2;
+}
+
+.candletop2 {
+  height: 140px;
+  width: 40px;
+  background-color: #c39d62;
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+  top: -250px;
+  left: 495px;
+}
+
+.candlewhite2 {
+  height: 115px;
+  width: 35px;
+  background-color: mintcream;
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+  top: -351px;
+  left: 497px;
+}
+
+.candlestem2 {
+  height: 330px;
+  width: 10px;
+  background-color: #91713a;
+  position: absolute;
+  top: -200px;
+  left: 510px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.candlebottom2 {
+  width: 130px;
+  height: 40px;
+  background-color: #c39d62;
+  top: 120px;
+  left: 450px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* vase */
+
+.vase {
+  height: 330px;
+  width: 170px;
+  background-color: #bab1a4;
+  opacity: 40%;
+  position: absolute;
+  z-index: 5;
+  border-radius: 40px;
+  top: 100px;
+  left: 270px;
+}
+
+.trapezoid1 {
+  position: absolute;
+  border-top: 50px solid #bab1a4;
+  border-bottom: 50px solid #bab1a4;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-radius: 40px;
+  height: 0;
+  width: 100px;
+  transform: rotate(180deg);
+  opacity: 40%;
+  top: 410px;
+  left: 280px;
+  z-index: 2;
+}
+
+/* branches */
+
+.branch1 {
+  position: absolute;
+  width: 3px;
+  height: 330px;
+  background: #474e34;
+  top: 90px;
+  left: 380px;
+  transform: rotate(2deg);
+  z-index: 3;
+}
+
+.branch2 {
+  position: absolute;
+  width: 3px;
+  height: 330px;
+  background: #2e3329;
+  top: 90px;
+  left: 380px;
+  transform: rotate(-3deg);
+  z-index: 2;
+}
+
+.branch3 {
+  position: absolute;
+  width: 3px;
+  height: 330px;
+  background: #474e34;
+  top: 90px;
+  left: 330px;
+  transform: rotate(4deg);
+  z-index: 3;
+}
+
+.branch4 {
+  position: absolute;
+  width: 3px;
+  height: 330px;
+  background: #2e3329;
+  top: 90px;
+  left: 350px;
+  transform: rotate(-14deg);
+  z-index: 2;
+}
+
+.branch5{
+  position: absolute;
+  width: 3px;
+  height: 330px;
+  background: #474e34;
+  top: 90px;
+  left: 350px;
+  transform: rotate(20deg);
+  z-index: 3;
+}
+
+.branch6 {
+  position: absolute;
+  width: 3px;
+  height: 330px;
+  background: #2e3329;
+  top: 90px;
+  left: 320px;
+  transform: rotate(-9deg);
+  z-index: 2;
+}
+
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #d88947;
+  border-radius: 50%;
+  top: 480px;
+  left: 290px;
+  z-index: 3;
+}
+
+.oval {
+  position: absolute;
+  width: 220px;
+  height: 130px;
+  background: #d88947;
+  border-radius: 100px / 100px;
+  top: 440px;
+  left: 320px;
+  z-index: 3;
+  transform: rotate(-15deg);
+}
+
+.core1 {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background: #796137;
+  border-radius: 50%;
+  top: 530px;
+  left: 310px;
+  z-index: 3;
+  transform: rotate(-15deg);
+}
+
+.core2 {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  border-radius: 20%;
+  background: #796137;
+  top: 460px;
+  left: 510px;
+  z-index: 2;
+  transform: rotate(-20deg);
+}
+
+/* big fruit */
+
+.bigfruit{
+  width: 290px;
+  height: 260px;
+  background: #c4643f;
+  border-radius: 140px/ 140px;
+  position: absolute;
+  left: 580px;
+  top: 300px;
+  z-index: 3;
+}
+
+.core3 {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  border-radius: 40%;
+  background: #533012;
+  top: 290px;
+  left: 700px;
+  z-index: 3;
+  transform: rotate(110deg);
+}
+
+.bigfruitdetails1 {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  background: #d69567;
+  border-radius: 100px / 50px;
+  transform: rotate(-100deg);
+  top: 430px;
+  left: 600px;
+  z-index: 4;
+}
+
+.bigfruitdetails2 {
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  background: #d69567;
+  border-radius: 80px / 80px;
+  transform: rotate(100deg);
+  top: 460px;
+  left: 630px;
+  z-index: 4;
+}
+
+.bigfruitdetails3 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #573616;
+  border-radius: 100px / 100px;
+  transform: rotate(-100deg);
+  top: 500px;
+  left: 800px;
+  z-index: 4;
+}
+
+.bigfruitdetails4 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #573616;
+  border-radius: 100px / 100px;
+  transform: rotate(-100deg);
+  top: 480px;
+  left: 820px;
+  z-index: 4;
+}
+
+/* leaves */
+
+.leaf1 {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 70px solid #474e34;
+  border-radius: 50%;
+  top: 50px;
+  left: 302px;
+  z-index: 4;
+  transform: rotate(1deg);
+}
+
+.leaf2 {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 70px solid #2e3329;
+  border-radius: 50%;
+  top: 70px;
+  left: 275px;
+  z-index: 3;
+  transform: rotate(-10deg);
+}
+
+.leaf3 {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 50px solid #474e34;
+  border-radius: 50%;
+  top: 130px;
+  left: 280px;
+  z-index: 4;
+  transform: rotate(-40deg);
+}
+
+.leaf4 {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 50px solid #474e34;
+  border-radius: 50%;
+  top: 200px;
+  left: 315px;
+  z-index: 4;
+  transform: rotate(60deg);
+}
+
+.leaf5 {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 70px solid #2e3329;
+  border-radius: 50%;
+  top: 100px;
+  left: 340px;
+  z-index: 3;
+  transform: rotate(10deg);
+}
+
+.leaf6 {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 50px solid #474e34;
+  border-radius: 50%;
+  top: 160px;
+  left: 360px;
+  z-index: 4;
+  transform: rotate(40deg);
+}
+
+.leaf7 {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 50px solid #38372b;
+  border-radius: 50%;
+  top: 160px;
+  left: 325px;
+  z-index: 2;
+  transform: rotate(-50deg);
+}
+
+.leaf8 {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 50px solid #38372b;
+  border-radius: 50%;
+  top: 210px;
+  left: 275px;
+  z-index: 2;
+  transform: rotate(-20deg);
+}
+
+.leaf9 {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 50px solid #38372b;
+  border-radius: 50%;
+  top: 80px;
+  left: 340px;
+  z-index: 3;
+  transform: rotate(20deg);
+}

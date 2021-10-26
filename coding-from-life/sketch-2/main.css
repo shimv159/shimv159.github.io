@@ -1,0 +1,464 @@
+/*
+  Coding from Life – Sketch 2: fluid layout
+
+  For sketch 2 you'll be positioning elements relative to a fluid container. This
+  means you'll need to use percentages when positioning and sizingelements within
+  your frame.
+*/
+
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 95vw;
+  height: 57vw;
+  background: #99928e;
+  margin: 2.5vw auto;
+  position: relative;
+}
+
+.frameleft{
+  width: 18vw;
+  height: 60vw;
+  position: relative;
+  left: -31vh;
+  top: 0vh;
+  background: black;
+  z-index: 5;
+}
+
+.frameright{
+  width: 4vw;
+  height: 68vw;
+  position: relative;
+  left: 160vh;
+  top: -120vh;
+  background: black;
+  z-index: 6;
+}
+
+/* Your CSS goes here */
+
+.table{
+  width: 98vw;
+  height: 50vh;
+  transform: skew(40deg);
+  background-color: #dcd6d2;
+  position: relative;
+  bottom: 772vh;  
+  left: -12vw;
+
+}
+
+/* candle1 */
+
+.candle1 {
+  position: relative;
+  bottom: 150vh;
+  left: 20vh;
+  z-index: 2;
+}
+
+.candletop1 {
+  height: 20vh;
+  width: 3vw;
+  background-color: #c39d62;
+  position: relative;
+  z-index: 2;
+  border-radius: 1vh;
+  top: -43vh;
+  left: 3.6vw;
+}
+
+.candlewhite1 {
+  height: 20vh;
+  width: 3vw;
+  background-color: mintcream;
+  position: relative;
+  z-index: 2;
+  border-radius: 1vh;
+  top: -38vh;
+  left: 3.6vw;
+}
+
+.candlestick1 {
+  width: 0.2vw;
+  height: 4vh;
+  position: relative;
+  top: -61vh;
+  left: 4.9vw;
+  background: black;
+}
+
+.candlestem1 {
+  height: 27vh;
+  width: 1vw;
+  background-color: #91713a;
+  position: relative;
+  top: -46vh;
+  left: 4.5vw;
+  z-index: 1;
+  border-radius: 20vh;
+}
+
+.candlebottom1 {
+  width: 18vw;
+  height: 12vh;
+  background-color: #c39d62;
+  top: -50vh;
+  left: -5vw;
+  position: relative;
+  border-radius: 50%;
+  transform: rotate(-5deg);
+}
+
+.candle2 {
+  position: relative;
+  bottom: 240vh;
+  left: 40vh;
+  z-index: 2;
+}
+
+.candletop2 {
+  height: 20vh;
+  width: 3vw;
+  background-color: #c39d62;
+  position: relative;
+  z-index: 2;
+  border-radius: 1vh;
+  top: -60vh;
+  left: 33.7vw;
+}
+
+.candlewhite2 {
+  height: 23vh;
+  width: 2.5vw;
+  background-color: mintcream;
+  position: relative;
+  z-index: 2;
+  border-radius: 1vh;
+  top: -53.5vh;
+  left: 34vw;
+}
+
+.candlestem2 {
+  height: 40vh;
+  width: 1vw;
+  background-color: #91713a;
+  position: relative;
+  top: -62vh;
+  left: 34.7vw;
+  z-index: 1;
+  border-radius: 20vh;
+}
+
+.candlebottom2 {
+  width: 12vw;
+  height: 9vh;
+  background-color: #c39d62;
+  top: -66vh;
+  left: 29vw;
+  position: relative;
+  border-radius: 50%;
+}
+
+/* vase */
+
+.vase {
+  height: 45vh;
+  width: 13vw;
+  background-color: #bab1a4;
+  opacity: 40%;
+  position: relative;
+  z-index: 5;
+  border-radius: 3vw;
+  top: -373vh;
+  left: 30vw;
+}
+
+.trapezoid1 {
+  position: relative;
+  border-top: 5vw solid #bab1a4;
+  border-bottom: 5vw solid #bab1a4;
+  border-left: 2.5vw solid transparent;
+  border-right: 2.5vw solid transparent;
+  border-radius: 4vw;
+  height: 0;
+  width: 8vw;
+  transform: rotate(180deg);
+  opacity: 40%;
+  top: -377vh;
+  left: 30vw;
+  z-index: 2;
+}
+
+
+/* branches */
+
+.branch1 {
+  position: relative;
+  width: 0.3vw;
+  height: 40vh;
+  background: #474e34;
+  top: -435vh;
+  left: 35vw;
+  transform: rotate(2deg);
+  z-index: 3;
+}
+
+.branch2 {
+  position: relative;
+  width: 0.3vw;
+  height: 40vh;
+  background: #2e3329;
+  top: -476vh;
+  left: 35vw;
+  transform: rotate(-5deg);
+  z-index: 3;
+}
+
+.branch3 {
+  position: relative;
+  width: 0.3vw;
+  height: 40vh;
+  background: #474e34;
+  top: -515vh;
+  left: 38vw;
+  transform: rotate(5deg);
+  z-index: 3;
+}
+
+.branch4 {
+  position: relative;
+  width: 0.3vw;
+  height: 40vh;
+  background: #2e3329;
+  top: -555vh;
+  left: 34vw;
+  transform: rotate(-14deg);
+  z-index: 2;
+}
+
+.branch5 {
+  position: relative;
+  width: 0.3vw;
+  height: 40vh;
+  background: #474e34;
+  top: -590vh;
+  left: 38vw;
+  transform: rotate(15deg);
+  z-index: 3;
+}
+
+.branch6 {
+  position: relative;
+  width: 0.3vw;
+  height: 40vh;
+  background: #2e3329;
+  top: -635vh;
+  left: 38vw;
+  transform: rotate(-3deg);
+  z-index: 2;
+}
+
+.smallfruit{
+  position: relative;
+  top: -676vh;
+  left: 17vw;
+}
+
+.circle {
+  position: relative;
+  width: 8vw;
+  height: 14vh;
+  background: #d88947;
+  border-radius: 50%;
+  top: 58vh;
+  left: 19vw;
+  z-index: 3;
+}
+
+.oval {
+  position: relative;
+  width: 20vw;
+  height: 20vh;
+  background: #d88947;
+  border-radius: 100px / 100px;
+  top: 38vh;
+  left: 20vw;
+  z-index: 3;
+  transform: rotate(-15deg);
+}
+
+.core1 {
+  position: relative;
+  width: 1.5vw;
+  height: 1.5vh;
+  background: #796137;
+  border-radius: 50%;
+  top: 32vh;
+  left: 20vw;
+  z-index: 3;
+  transform: rotate(70deg);
+}
+
+.core2 {
+  position: relative;
+  width: 5vw;
+  height: 4vh;
+  border-radius: 20%;
+  background: #796137;
+  top: 20vh;
+  left: 37vw;
+  z-index: 2;
+  transform: rotate(-20deg);
+}
+
+/* big fruit */
+
+.bigfruitwhole{
+  position: relative;
+  top: -705vh;
+  left: 20vw;
+}
+
+.bigfruit{
+  width: 21vw;
+  height: 32vh;
+  background: #c4643f;
+  border-radius: 30vh/ 30vh;
+  position: relative;
+  left: 75vh;
+  top: 22vw;
+  z-index: 3;
+}
+
+.core3 {
+  position: relative;
+  width: 4vw;
+  height: 6vh;
+  border-radius: 40%;
+  background: #533012;
+  top: 2vw;
+  left: 89vh;
+  z-index: 3;
+  transform: rotate(110deg);
+}
+
+.bigfruitdetails1 {
+  position: relative;
+  width: 2vw;
+  height: 2vh;
+  background: #d69567;
+  border-radius: 10vh / 5vh;
+  transform: rotate(-100deg);
+  top: 19vh;
+  left: 78vh;
+  z-index: 4;
+}
+
+.bigfruitdetails3 {
+  position: relative;
+  width: 1vw;
+  height: 2vh;
+  background: #573616;
+  border-radius: 5vw / 5vw;
+  transform: rotate(-100deg);
+  top: 24vh;
+  left: 60vw;
+  z-index: 5;
+}
+
+/* leaves */
+
+.leaves{
+  position: relative;
+  top: -765vh;
+  left: 13vw;
+}
+
+.leaf1 {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+  border-top: 5vw solid #2e3329;
+  border-radius: 50%;
+  top: 4vh;
+  left: 15.3vw;
+  z-index: 4;
+  transform: rotate(-10deg);
+}
+
+.leaf2 {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+  border-top: 5vw solid #474e34;
+  border-radius: 50%;
+  top: 4vh;
+  left: 17.3vw;
+  z-index: 4;
+  transform: rotate(11deg);
+}
+
+.leaf3 {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+  border-top: 5vw solid #2e3329;
+  border-radius: 50%;
+  top: -10vh;
+  left: 19vw;
+  z-index: 3;
+  transform: rotate(-2deg);
+}
+
+.leaf4 {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+  border-top: 5vw solid #2e3329;
+  border-radius: 50%;
+  top: 0vh;
+  left: 20.5vw;
+  z-index: 3;
+  transform: rotate(-45deg);
+}
+
+.leaf5 {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+  border-top: 5vw solid #474e34;
+  border-radius: 50%;
+  top: -26vh;
+  left: 23vw;
+  z-index: 4;
+  transform: rotate(2deg);
+}
+
+.leaf6 {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+  border-top: 5vw solid #2e3329;
+  border-radius: 50%;
+  top: -25vh;
+  left: 23vw;
+  z-index: 3;
+  transform: rotate(40deg);
+}
