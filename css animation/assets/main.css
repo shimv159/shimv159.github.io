@@ -1,0 +1,54 @@
+
+body {
+  font-family: arial;
+  color: red;
+  font-size: 100px;
+  animation-name: backgroundColorPalette;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes backgroundColorPalette {
+  0% {
+    background: #aae8e8;
+  }
+  50% {
+    background: #355a83;
+  }
+  100% {
+    background: #1d3851;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.item {
+  text-align: center;
+}
+
+
+#zzz {
+  height:300px;
+  animation: zzz 2s ease-in-out infinite alternate;
+  -webkit-animation: zzz 3s ease-in-out infinite alternate;
+}
+
+@keyframes zzz {
+  0% {
+      transform: scale(0.3);
+      -webkit-transform: scale(1.0);
+  }
+  100% {
+      transform: scale(0.0);
+      -webkit-transform: scale(2.0);
+      opacity: 0; /* On hover, set opacity to 2 */
+
+  }
+}
