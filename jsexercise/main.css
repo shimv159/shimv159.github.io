@@ -1,0 +1,92 @@
+body {
+  background-color:  white;
+}
+
+section {
+  display:  flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items:  center;
+  height:  100vh;
+}
+
+.title{
+  font-family: Helvetica, Sans-Serif;
+  font-size: 20pt;
+}
+
+.button1{
+  padding: 20px 50px;
+  border-radius: 30px;
+  background-color:  #F4F4F4;
+  color:  black;
+  font-family: Helvetica, Sans-Serif;
+  font-size: 15pt;
+  text-align:  center;
+  transition:  all 100ms;
+}
+
+.button1:hover {
+  background-color: #974f33;
+  color: white;
+  cursor:  pointer;
+}
+
+.button1On {
+  background-color:  black;
+  color:  white;
+}
+
+.light1 {
+  background-image: url("assets/coffee.jpg");
+}
+
+.button2{
+  padding: 20px 50px;
+  border-radius: 30px;
+  background-color:  #F4F4F4;
+  color:  black;
+  font-family: Helvetica, Sans-Serif;
+  font-size: 15pt;
+  text-align:  center;
+  transition:  all 100ms;
+}
+
+.button2:hover {
+  background-color: #7e5313;
+  cursor:  pointer;
+}
+
+.button2On {
+  background-color:  black;
+  color:  white;
+}
+
+.light2 {
+  background-image: url("assets/tea.jpg");
+}
+
+.button3{
+  padding: 20px 50px;
+  border-radius: 30px;
+  background-color:  #F4F4F4;
+  color:  black;
+  font-family: Helvetica, Sans-Serif;
+  font-size: 15pt;
+  text-align:  center;
+  transition:  all 100ms;
+}
+
+.button3:hover {
+  background-color: #DEB887;
+  cursor:  pointer;
+}
+
+.button3On {
+  background-color:  black;
+  color:  white;
+}
+
+.light3{
+  background-image: url("assets/boba.jpg");
+}
