@@ -1,0 +1,167 @@
+html,body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Rubik', sans-serif;
+  background-color: gray;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  z-index: -9999;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  border-bottom: 2px solid;
+  border-bottom-color: #C4F0E6;
+}
+
+/* MENU/NAV BAR */
+
+.menu{
+  padding: 1em;
+  width: 100%;
+  height: 2.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+  border-bottom: black solid;
+}
+
+.menucontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  position: fixed;
+  width: 30%;
+  margin-left: 2em;
+}
+
+
+.menu-item{
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-item:hover {
+  cursor:  pointer;
+}
+
+.menu-item:hover > .menucircle{
+  background: #C4F0E6;
+}
+
+.menucircle{
+  width: 1.4vw;
+  height: 1.4vw;
+  background: #F2AAA1;
+  border-radius: 50%;
+  position: relative;
+}
+
+.menutext{
+  margin-left: 0.5em;
+  font-weight: normal;  
+  position: relative;
+}
+
+.menutext:hover{
+  border-bottom: 2px solid;
+  border-bottom-color: #C4F0E6;
+}
+
+
+/* HOME */
+
+.home{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  z-index: 1;
+  position: absolute;
+}
+
+/* PROJECTS */
+
+.projects{
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+.projects-container{
+  display: flex;
+  flex-direction: row;
+  padding: 10vw;
+}
+
+.bodycircle{
+  width: 3.8vw;
+  height: 3.8vw;
+  background: #C4F0E6;
+  border-radius: 50%;
+}
+
+.heading{
+  font-weight: bold;
+  font-size: 3em;
+  margin-left: 1vw;
+}
+
+.heading > p {
+  margin:  0;
+}
+
+.content-container{
+  width: 80vw;
+  height: auto;
+  display: flex;
+  padding-bottom: 20vw;
+}
+
+.image{
+  flex: 2;
+  order: 1;
+  margin-left: 14.5vw;
+}
+
+img{
+  border-radius: 2vw;
+  max-width: 95%;
+}
+
+img:hover{
+  cursor: pointer;
+}
+
+.content-text{
+  flex: 1;
+  order: 2;
+  justify-content: flex-start;
+}
+
+.worktitle{
+  font-size: 2em;
+  font-weight: bold;
+  border-bottom: lightgray solid;
+}
