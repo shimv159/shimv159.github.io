@@ -3,7 +3,7 @@ html,body {
   height: 100%;
   font-family: 'Rubik', sans-serif;
   background-color: gray;
-  cursor: url('customcursor.png');
+  cursor: url('customcursor.png'), pointer;
 }
 
 canvas {
