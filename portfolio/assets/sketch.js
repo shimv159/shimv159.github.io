@@ -18,4 +18,3 @@ function mouseReleased() {
   background("white");
   frameRate(30);
 }
-
