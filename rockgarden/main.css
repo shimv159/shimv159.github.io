@@ -1,5 +1,7 @@
 html, body{
 	background-color: #D4FF64;
+	font-family: 'Courier New', monospace;
+	font-size: 1em;
 }
 
 img{
@@ -15,11 +17,16 @@ img:hover{
 .img1{
 	filter:invert(80%) sepia(100%) contrast(80%) saturate(400%) hue-rotate(250deg);
 	transition: .5s ease;
+	min-width: 30%;
 }
 
 .img1:hover{
 	filter: none;
 	transition: .5 ease;
+}
+
+a{
+	text-decoration: none;
 }
 
 .content{
@@ -29,8 +36,8 @@ img:hover{
 	height: auto;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 10px;
-	grid-auto-rows: minmax(100px, auto);
+	gap: 20px;
+	grid-auto-rows: minmax(200px, auto);
 }
 
 .sidebar{
@@ -40,8 +47,7 @@ img:hover{
 	height: 20%;
 	left: 67vw;
 	top: 80vh;
-    display: inline-block;
-
+  display: inline-block;
 }
 
 .sidebar: hover{
@@ -121,6 +127,33 @@ img:hover{
   } 
 }
 
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding: 5em 2em;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 3;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
 .box1 {
 	align-self: start;
 	grid-column-start: 1;
@@ -152,7 +185,7 @@ img:hover{
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 5;
-	grid-row-end: 5;
+	grid-row-end: 8;
 }
 
 .box4{
@@ -198,7 +231,7 @@ img:hover{
 .box12{
 	align-self: start;
 	grid-column-start: 1;
-	grid-column-end: 3;
+	grid-column-end: 2;
 	grid-row-start: 5;
 	grid-row-end: 6;
 }
@@ -287,7 +320,6 @@ img:hover{
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
@@ -303,6 +335,10 @@ img:hover{
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
+  top: 12vw;
+  left: 13vw;
+
+
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */

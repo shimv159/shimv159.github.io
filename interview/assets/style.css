@@ -18,6 +18,14 @@ body {
     position: absolute;
 }
 
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+
 /* SCROLLING */
 
 /* width */
