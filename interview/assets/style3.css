@@ -1,0 +1,106 @@
+*{ 
+margin: 0;
+padding: 0; 
+}
+
+body {
+  width: 100%;
+  position: absolute;
+  line-height: 1.3em;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.link{
+  border-bottom: white solid;
+}
+
+
+/* TITLE */
+
+.titleheading{
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 4em;
+  font-weight: 700;
+  padding: 47vh; 
+  color: black;
+}
+
+.subtitle{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: #0273D3;
+  font-family: 'Raleway', sans-serif;
+  top: 94vh;
+  left: 40vw;
+  position: absolute;
+}
+
+.titlebox{
+  width: 100%;
+  height: 100vh;
+  background-color: #FDE74C;
+}
+
+
+.pullbox{
+  width: 100%;
+  height: 120%;
+  background-color: #FDE74C;
+}
+
+.pullquote{
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600 italic;
+  padding-top: 51vh;
+  padding-left: 47vh; 
+  padding-right: 47vh; 
+  padding-bottom: 47vh;
+  line-height: 1.2em;
+  color: black;
+}
+
+.section{
+  margin: 7em;
+  padding: 1em;
+  line-height: 1.8em;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Raleway', sans-serif;
+}
+
+.qbox{
+  border-right: black solid;
+  margin-right: 2em;
+}
+
+.question{
+  flex: 20%;
+  flex-wrap: wrap;
+  align-content: center;
+  align-self: center;
+  text-align: right;
+  font-weight: 900;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: black;
+  padding-right: 5em;
+}
+
+.answer{
+  flex: 80%;
+  font-size: 1em;
+  font-weight: 500;
+  color: black;
+}
+
+.highlight{
+  color: #0273D3;
+}

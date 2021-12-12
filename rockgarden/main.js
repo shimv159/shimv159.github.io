@@ -1,13 +1,13 @@
 var onScrollHandler = function() {
   var newImageUrl = document.querySelector(".navbar");
   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  if (scrollTop > 100) {
+  if (scrollTop > 0) {
      newImageUrl.src = "assets/bar.svg"
   }
-  if (scrollTop > 200) {
+  if (scrollTop > 300) {
      newImageUrl.src = "assets/bar1.svg"
   }
-  if (scrollTop > 300) {
+  if (scrollTop > 600) {
      newImageUrl.src = "assets/bar2.svg"
   }
   bar = newImageUrl;

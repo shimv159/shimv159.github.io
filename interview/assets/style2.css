@@ -1,0 +1,125 @@
+*{ 
+margin: 0;
+padding: 0; 
+}
+
+body {
+  width: 100%;
+  font-family: "Courier New", monospace;;
+  position: absolute;
+  line-height: 1.3em;
+  cursor: url('cursor.png'), auto;
+
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.link{
+  border-bottom: white solid;
+
+}
+
+/* SCROLLING */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: darkgray; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightgray; 
+}
+
+
+/* TITLE */
+
+.titleheading{
+  text-align: center;
+  font-size: 2em;
+  padding: 47vh; 
+  color: white;
+}
+
+.titlebox{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.startarrow{
+  left: 48vw;
+  top: 86vh;
+  padding-bottom: 4em;
+  position: absolute;
+}
+
+
+.endbox{
+  width: 100%;
+  height: 120%;
+  background-color: black;
+}
+
+.endtitle{
+  text-align: center;
+  font-size: 2em;
+  padding-top: 51vh;
+  padding-left: 47vh; 
+  padding-right: 47vh; 
+  padding-bottom: 47vh;
+  color: white;
+}
+
+.endarrow{
+  left: 48vw;
+  padding-top: 4em;
+  position: absolute;
+}
+
+.section{
+  margin: 7em;
+  padding: 1em;
+  font-size: 1.2em;
+}
+
+.question{
+  font-weight: bold;
+  color: white;
+}
+
+.answer{
+  color: black;
+}
+
+.imgbox{
+  width: auto;
+  height: auto;
+  padding: 20%; 
+  background: url('zeinbg.jpg')no-repeat center;
+  background-size: cover;
+  background-color: dimgray;
+}
+
+.imgbox2{
+  width: auto;
+  height: auto;
+  padding: 20%; 
+  background: url('zein_tammam.jpg')no-repeat center;
+  background-size: cover;
+  background-color: dimgray;
+}
+
