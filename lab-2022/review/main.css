@@ -1,0 +1,92 @@
+body{
+	background-color: white;
+	font-family: 'PPNeueMontreal', sans-serif;
+	font-style: normal;
+	margin: 3em;
+	padding: 1em;
+	cursor: url('cursor.png'), auto;	
+}
+
+
+@font-face{
+	font-family: PPNeueMontreal;
+	src: url('PPNeueMontreal-Regular.woff'), url('PPNeueMontreal-Regular.woff') format('woff');
+}
+
+@font-face{
+	font-family: PPNeueMontreal;
+	src: url('PPNeueMontreal-Italic.woff'), url('PPNeueMontreal-Italic.woff') format('woff');
+	font-style: italic;
+}
+
+@font-face{
+	font-family: PPNeueMontreal;
+	src: url('PPNeueMontreal-Bold.woff'), url('PPNeueMontreal-Bold.woff') format('woff');
+	font-weight: bold;
+}
+
+@font-face{
+	font-family: PPNeueMontreal;
+	src: url('PPNeueMontreal-Medium.woff'), url('PPNeueMontreal-Medium.woff') format('woff');
+	font-weight: medium;
+}
+
+@font-face{
+	font-family: PPNeueMontreal;
+	src: url('PPNeueMontreal-BoldItalic.woff'), url('PPNeueMontreal-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+ul{
+	list-style-type: square;
+}
+
+h1{
+
+}
+
+
+h3{
+	font-weight: normal;
+	color: whitesmoke;
+	background-color: #373b41;
+	padding: 0.4em;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	font-style: italic;
+}
+
+img{
+	opacity: 0.5;
+	transition: 1s;
+}
+
+img:hover{
+	opacity: 1.0;
+	transition: 1s;
+	cursor: zoom-in;
+}
+
+.link1{
+	background-color: #fcece9;
+}
+
+.dig-photo-archive{
+	margin: 3em;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+}
+
+.underline{
+	border-bottom: solid #fcece9;
+	border-width: 2px;
+}
