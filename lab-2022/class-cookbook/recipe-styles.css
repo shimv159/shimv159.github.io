@@ -1,0 +1,110 @@
+body{
+	background-image: url("assets/seijoh3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 35pt;
+}
+
+p{
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	line-height: 1em;
+	font-size: 13pt;
+}
+
+ul{
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 13pt;
+}
+
+ol{
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 13pt;
+}
+
+
+.info{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+
+.bold{
+	font-weight: 600;
+}
+
+
+.bolder{
+	font-weight: 700;
+}
+
+.allcontent{
+	margin: 5em;
+}
+#header{
+	padding-bottom: 5vw;
+}
+
+.sectioncontainer{
+	display: flex;
+	flex-direction: row;
+	gap: 10vw;
+	max-width: 50%;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	gap: 2em;
+	margin-top: 1vw;
+}
+
+.ingredients-content{
+	max-width: 20%;
+}
+
+.instructions-content{
+	max-width: 45%;
+}
+
+.section-title{
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+	font-size: 13pt;
+	color: white;
+	padding: 0.5em;
+	border-radius:20px ;
+	letter-spacing: 1px;
+	background-color: #E4896A;
+}
+
+.icon{
+  position: fixed;
+  bottom: 2vw;
+  right: 0;
+  width: 300px;
+  z-index: 1
+}
+
+.speech{
+  position: fixed;
+  bottom: 17vw;
+  right: 0;
+  width: 300px;
+  display: none;
+  z-index: 2;
+}
+
+.icon:hover+.speech{
+	z-index: 2;
+	display: block;
+	transition: 2s ease-in;
+}
