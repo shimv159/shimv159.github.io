@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	max-width: 80vw;
+	font-family: sans-serif;
+	background-color: mintcream;
+}
+
+p{
+	line-height: 1.6em;
+	margin-bottom: 1em;
+}
+
+.text{
+	margin: 1em;
+	padding: 4em;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+h3{
+	margin-bottom: 2em;
+}
+
+blockquote{
+	padding: 2em;
+}
+.highlight1{
+	background: hotpink;
+	font-weight: bold;
+}
+
+.subheading{
+	font-weight: bold;
+	padding: 1em;
+}

@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica';
+}
+
+body{
+	margin: 5em;
+	background-color: whitesmoke;
+}
+
+h1{
+	font-size: 2em;
+	margin-bottom: 0.2em;
+}
+
+h2{
+	font-size: 1.2em;
+	margin-bottom: 4em;
+	font-weight: normal;
+}
+
+p{
+	margin-bottom: 2em;
+	font-size: 1.2em;
+}
+
+a{
+	color: inherit;
+/*	border-style: dotted;
+*/	background-color: #cdcdcd;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+	background-color: yellow;
+}
+
+.intro{
+	max-width: 30vw;
+}
+
+.intro-text{
+	font-size: 2em;
+}

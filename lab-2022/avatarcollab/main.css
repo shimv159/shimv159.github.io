@@ -1,0 +1,59 @@
+/* this makes our grid responsive- we'l talk more in coming weeks */
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p{
+    font-family: 'Helvetica';
+}
+
+/*#grid-container1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-gap: 10px;
+    padding: 20px;
+}
+  
+#grid-container1 > div {
+    border: solid black 1px;
+    background-color: white;
+    padding: 5%;
+}
+*/
+#instructions {
+  background-color: white;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+/* add your ids below */
+
+#vanessa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2em;
+    border-radius: 20px;
+}
+/*
+.vanessa-text{
+    font-size: 13pt;
+    font-weight: bold;
+    color: white;
+    align-content: center;
+}*/
