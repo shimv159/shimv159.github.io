@@ -123,8 +123,15 @@ a.content:visited{
 	line-height: 1.2em;
 	padding-top: 2em;
 	padding-left: 1em;
-/*	align-self: center;
-	justify-self: left;*/
+}
+
+.text-content2{
+	font-family: 'PPMigra-Regular';
+	font-weight: normal;
+	font-size: 4em;
+	line-height: 1.2em;
+	padding-top: 2em;
+	padding-left: 1.5em;
 }
 
 .text1{
