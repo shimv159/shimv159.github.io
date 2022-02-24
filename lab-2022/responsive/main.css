@@ -1,13 +1,213 @@
-.content{
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
 	background-color: #F5F6F1;
 }
 
+.content{
+	margin: 5em;
+}
+
 h1{
-	color: #5F483A;
+	color: #B24330;
+	font-family: 'Rammetto One', cursive;
+	font-weight: 400;
+	line-height: 1em;
+	font-size: 2em;
+	padding-bottom: 0.5em;
+
+
 }
 
 
 h2{
 	color: #5F483A;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 1em;
+	padding-bottom: 2em;
+	letter-spacing: 0.3em;
 }
 
+p{
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.3em;
+	font-weight: 300;
+	margin-bottom: 1em;
+	color: #5F483A;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+		body{
+			background-color: #342A20;
+		}
+
+		h1{
+			color: #E6BA61;
+			font-family: 'Dela Gothic One', cursive;
+			font-weight: 400;
+			line-height: 1em;
+			font-size: 2em;
+			padding-bottom: 0.5em;
+			font-weight: 400;
+		}
+
+
+		h2{
+			color: #F3F4EF;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1em;
+			padding-bottom: 2em;
+			letter-spacing: 0.3em;
+		}
+
+		p{
+			color: #F3F4EF;
+		}
+	}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	body{
+			background-color: #4C1F08;
+		}
+
+		h1{
+			color: #80724D;
+			font-family: 'Shrikhand', cursive;
+			font-weight: 400;
+			line-height: 1em;
+			font-size: 2em;
+			padding-bottom: 0.5em;
+			font-weight: 400;
+		}
+
+
+		h2{
+			color: #E5BA5F;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1em;
+			padding-bottom: 2em;
+			letter-spacing: 0.3em;
+		}
+
+		p{
+			color: #E5BA5F;
+		}
+	}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	body{
+		background-color: #5F483A;
+	}
+
+
+	h1{
+		color: #EC7A48;
+		font-family: 'Pirata One', cursive;
+		font-weight: 400;
+		line-height: 1em;
+		font-size: 3em;
+		padding-bottom: 0.5em;
+	}
+
+
+	h2{
+		color: #F5F6F1;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 1em;
+		padding-bottom: 2em;
+		letter-spacing: 0.3em;
+	}
+
+	p{
+		font-family: 'Inconsolata', monospace;
+		font-size: 1.3em;
+		font-weight: 300;
+		margin-bottom: 1em;
+		color: #F5F6F1;
+	}
+}
+		
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	body{
+		background-color: #CAC5B1;
+	}
+
+
+	h1{
+		color: #B24330;
+		font-family: 'Contrail One', cursive;
+		font-weight: 400;
+		line-height: 1em;
+		font-size: 3em;
+		padding-bottom: 0.5em;
+	}
+
+
+	h2{
+		color: #5F483A;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 1em;
+		padding-bottom: 2em;
+		letter-spacing: 0.3em;
+	}
+
+	p{
+		font-family: 'Inconsolata', monospace;
+		font-size: 1.3em;
+		font-weight: 300;
+		margin-bottom: 1em;
+		color: #5F483A;
+	}
+}}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	body{
+		background-color: #F5F6F1;
+	}
+
+
+	h1{
+		color: #B24330;
+		font-family: 'Rammetto One', cursive;
+		font-weight: 400;
+		line-height: 1em;
+		font-size: 2em;
+		padding-bottom: 0.5em;
+	}
+
+
+	h2{
+		color: #5F483A;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 1em;
+		padding-bottom: 2em;
+		letter-spacing: 0.3em;
+	}
+
+	p{
+		font-family: 'Inconsolata', monospace;
+		font-size: 1.3em;
+		font-weight: 300;
+		margin-bottom: 1em;
+		color: #5F483A;
+	}
+}
