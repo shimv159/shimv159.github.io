@@ -103,18 +103,6 @@ a.content:visited{
 	display: none;
 }
 
-.container2{
-	display: grid;
-	grid-template-columns: 3fr 1fr;
-	grid-gap: 1em;
-	grid-auto-rows: minmax(90px,auto);
-	grid-template-areas:
-		"text-left text-right"
-		"text-left text-right"
-	;
-	background-color: black;
-}
-
 
 .text-content{
 	font-family: 'PPMigra-Regular';
@@ -249,7 +237,7 @@ a.content:visited{
 	display: none;
 }
 
-/* sixth paragraph - hovers */
+/*/* sixth paragraph - hovers */
 
 .words span{
   opacity: 0;
@@ -284,16 +272,16 @@ a.content:visited{
 .words span:nth-child(6) {
   animation-delay: 5s;
   color: #e760c2;
-}
-*/
-@keyframes animateWords {
+}*/
+
+/*@keyframes animateWords {
     0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
     8% { opacity: 1; height: 60px; }
     19% { opacity: 1; height: 60px; }
     25% { opacity: 0; height: 60px; }
     100% { opacity: 0; }
 }
-
+*/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -319,6 +307,8 @@ a.content:visited{
 		padding-top: 1.5em;
 		font-size: 0.8em;
 		background: white;
+		width: 100%;
+		padding-right: 5em;
 		position: sticky;
 		z-index: 3;
 		bottom: 0;
@@ -347,6 +337,7 @@ a.content:visited{
 		width: 100%;
 		height: 100vh;
 		background: yellow;
+		z-index: 4;
 	}
 
 	.header.open.mobile-navigation{
