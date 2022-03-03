@@ -268,16 +268,19 @@ a.content:visited{
 	  background: #D3D3D3; 
 	}
 
+	.blank{
+		display: block;
+	}
+
 	body{
 		background-color: black;
 	}
 
 	h3{
-	font-family: 'PPMigra-Italic';
-	font-weight: normal;
-	font-style: italic;
-	font-size: 2em;
-	line-height: 1.2em;
+		font-family: 'PPMigra-Italic';
+		font-weight: normal;
+		font-style: italic;
+		line-height: 1.2em;
 	}
 
 	h3 > a{
@@ -305,6 +308,22 @@ a.content:visited{
 		color: white;
 	}
 
+	a.content2{
+		border-bottom:  5px solid black;
+		text-decoration: none;
+		color: black;
+	}
+
+	a.content2:hover{
+		font-family: 'PPMigra-Italic';
+		font-weight: normal;
+		font-style: italic;
+	}
+
+	a.content2:visited{
+		color: black;
+	}
+
 	.container{
 		display: grid;
 		grid-template-columns: 3fr 1fr;
@@ -315,6 +334,29 @@ a.content:visited{
 		"text-left text-right"
 		background-color: black;
 		color: white;
+	}
+
+	.container-article{
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-gap: 1em;
+		grid-auto-rows: minmax(90px,auto);
+		grid-template-areas:
+			"text-left text-right"
+			"text-left text-right";
+		color: black;
+		background-color: #FFFF64;
+	}
+
+	.article-source2{
+		padding-left: 5em;
+		padding-top: 1.5em;
+		font-size: 0.8em;
+		background-color: #FFFF64;
+		width: 100%;
+		position: sticky;
+		z-index: 3;
+		bottom: 0;
 	}
 
 	.text-content{
@@ -373,16 +415,19 @@ a.content:visited{
 	  background: #D3D3D3; 
 	}
 
+	.blank{
+		display: none;
+	}
+
 	body{
 		background-color: #4d4d4d;
 	}
 
 	h3{
-	font-family: 'PPMigra-Italic';
-	font-weight: normal;
-	font-style: italic;
-	font-size: 2em;
-	line-height: 1.2em;
+		font-family: 'PPMigra-Italic';
+		font-weight: normal;
+		font-style: italic;
+		line-height: 1.2em;
 	}
 
 	h3 > a{
@@ -410,6 +455,22 @@ a.content:visited{
 		color: white;
 	}
 
+	a.content2{
+		border-bottom:  5px solid black;
+		text-decoration: none;
+		color: black;
+	}
+
+	a.content2:hover{
+		font-family: 'PPMigra-Italic';
+		font-weight: normal;
+		font-style: italic;
+	}
+
+	a.content2:visited{
+		color: black;
+	}
+
 	.container{
 		display: grid;
 		grid-template-columns: 3fr 1fr;
@@ -420,6 +481,29 @@ a.content:visited{
 		"text-left text-right"
 		background-color: #4d4d4d;
 		color: white;
+	}
+
+	.container-article{
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-gap: 1em;
+		grid-auto-rows: minmax(90px,auto);
+		grid-template-areas:
+			"text-left text-right"
+			"text-left text-right";
+		color: black;
+		background-color: #FFFF64;
+	}
+
+	.article-source2{
+		padding-left: 5em;
+		padding-top: 1.5em;
+		font-size: 1em;
+		background-color: #FFFF64;
+		width: 100%;
+		position: sticky;
+		z-index: 3;
+		bottom: 0;
 	}
 
 	.text-content{
@@ -520,6 +604,22 @@ a.content:visited{
 		color: black;
 	}
 
+	a.content2{
+		border-bottom:  5px solid black;
+		text-decoration: none;
+		color: black;
+	}
+
+	a.content2:hover{
+		font-family: 'PPMigra-Italic';
+		font-weight: normal;
+		font-style: italic;
+	}
+
+	a.content2:visited{
+		color: black;
+	}
+
 	/* CLASSES */
 
 	.container{
@@ -607,6 +707,29 @@ a.content:visited{
 		bottom: 0;
 	}
 
+	.container-article{
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-gap: 1em;
+		grid-auto-rows: minmax(90px,auto);
+		grid-template-areas:
+			"text-left text-right"
+			"text-left text-right";
+		color: black;
+		background-color: #FFFF64;
+	}
+
+	.article-source2{
+		padding-left: 6em;
+		padding-top: 1.5em;
+		font-size: 1em;
+		background-color: #FFFF64;
+		width: 100%;
+		position: sticky;
+		z-index: 3;
+		bottom: 0;
+	}
+
 	.nested-grid{
 		font-family: 'Space Mono', monospace;
 		font-size: 1em;
@@ -676,7 +799,3 @@ a.content:visited{
 	}
 
 }
-
-/*Extra large devices (large laptops and desktops, 1200px and up) 
-@media only screen and (min-width: 1200px) {...}
-
