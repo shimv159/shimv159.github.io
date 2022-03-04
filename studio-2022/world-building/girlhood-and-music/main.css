@@ -331,7 +331,7 @@ a.content:visited{
 		grid-auto-rows: minmax(90px,auto);
 		grid-template-areas:
 		"text-left text-right"
-		"text-left text-right"
+		"text-left text-right";
 		background-color: black;
 		color: white;
 	}
