@@ -168,7 +168,7 @@ a.content:visited{
 	margin-bottom: 1em;
 	font-size: 1em;
 	background: white;
-	position: sticky;
+	position: fixed;
 	bottom: 0;
 }
 
