@@ -345,12 +345,11 @@ a.content:visited{
 	}
 
 	.article-source2{
-		padding-left: 4.5em;
+		padding-left: 5em;
 		padding-top: 1.5em;
-		padding-bottom: 0.5em;
 		font-size: 0.8em;
 		background-color: #FFFF64;
-		width: 100vw 10ch;
+		width: 100%;
 		position: sticky;
 		z-index: 3;
 		bottom: 0;
@@ -359,22 +358,21 @@ a.content:visited{
 	.text-content{
 		font-family: 'PPMigra-Regular';
 		font-weight: normal;
-		font-size: 3.5em;
+		font-size: em;
 		line-height: 1.2em;
 		padding-top: 2em;
 		padding-left: 1em;
 		width: 10ch;
+		margin-bottom: 1em;
 		z-index: 1;
 	}
 
 	.article-source{
 		padding-left: 3.7em;
 		padding-top: 1.5em;
-		padding-bottom: 0.5em;
 		font-size: 0.8em;
 		background-color: black;
 		width: 100%;
-		height: 10vw;
 		position: sticky;
 		z-index: 3;
 		bottom: 0;
@@ -491,8 +489,7 @@ a.content:visited{
 	}
 
 	.article-source2{
-		padding-left: 4em;
-		padding-bottom: 1em;
+		padding-left: 5em;
 		padding-top: 1.5em;
 		font-size: 1em;
 		background-color: #FFFF64;
@@ -502,24 +499,20 @@ a.content:visited{
 		bottom: 0;
 	}
 
-
 	.text-content{
 		font-family: 'PPMigra-Regular';
 		font-weight: normal;
-		font-size: 3.5em;
+		font-size: 5em;
 		line-height: 1.2em;
 		padding-top: 2em;
 		padding-left: 1em;
 		z-index: 1;
-		width: 18ch;
-		margin-bottom: 1em;
 	}
 
 	.article-source{
-		padding-left: 4em;
-		padding-bottom: 1em;
+		padding-left: 6em;
 		padding-top: 1.5em;
-		font-size: 1em;
+		font-size: 0.8em;
 		background-color: #4d4d4d;
 		width: 100%;
 		position: sticky;
@@ -529,6 +522,7 @@ a.content:visited{
 
 	.nested-grid{
 		font-family: 'Space Mono', monospace;
+		font-size: 1em;
 		width: 27vw;
 		margin-right: 4em
 	}
@@ -723,7 +717,7 @@ a.content:visited{
 	}
 
 	.article-source2{
-		padding-left: 5em;
+		padding-left: 6em;
 		padding-top: 1.5em;
 		font-size: 1em;
 		background-color: #FFFF64;
