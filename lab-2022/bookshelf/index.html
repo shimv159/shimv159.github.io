@@ -1,18 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
- 	<script src="lib/airtable.browser.js" type="text/javascript" defer></script>
-	<script src="script.js" type="text/javascript" defer></script>
- 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<title>Bookshelf</title>
-</head>
-<body>
-	<h1>Hello, bookshelf!</h1>
 
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books, Oh Books!</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/kwi8ujg.css" />
+
+    <link rel="stylesheet" href="main.css" />
+    <script src="script.js" type="text/javascript" defer></script>
+  </head>
+
+  <body>
+    <h1>My bookshelf, <br />my bookself</h1>
+    
+    <nav id="shelf" class="shelf"></nav>
+
+    <article id="book-detail" class="book-detail hidden">
+  
+    <section class="figure">
+      <img class="cover-image" src="https://www.cs.princeton.edu/~bwk/tpop.webpage/tpop.jpg" alt="Book Cover"/>
+    </section>
+
+    <section class="info">
+      <h2 class="title">The Practice of Programming</h2>
+      <p class="description">The wiener dog book! Rather than focusing on a specific language or library, this book pulls back and looks at the big big picture of programming.</p>
+      <a class="more" href="https://www.cs.princeton.edu/~bwk/tpop.webpage/">Learn More</a>
+    </section>
+      
+    </article>  
+    <script src="airtable.browser.js"></script>
+  </body>
 </html>

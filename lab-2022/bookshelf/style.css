@@ -5,12 +5,94 @@
 
 body{
 	background-color: lavender;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+  padding: 2em;
 }
 
 h1{
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 700;
-	font-size: 6.5em;
+
 	text-align: center;
 	padding: 3em;
+	font-size: 4em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.shelf {
+  border-bottom: 10px solid black;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2em;
+}
+
+.shelf .book-spine {
+  background: black;
+  color: white;
+  height: fit-content;
+  width: 30px;
+  padding: 10px 0px;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  line-height: 30px;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.shelf .book-spine.active {
+  background: red;
+}
+
+.shelf .book-spine:hover {
+  background: #f00;
+}
+
+.book-detail {
+  display: flex;
+}
+
+.book-detail .figure {
+  width: 200px;
+  flex: none;
+  margin-right: 30px;
+}
+
+.book-detail .cover-image {
+  width: 100%;
+  border: 5px solid black;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.book-detail .info {
+  max-width: 600px;
+}
+
+.book-detail .title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.book-detail .description {
+  margin-top: 0.5em;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .book-detail {
+    flex-direction: column;
+  }
+  .book-detail .figure {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 2em;
+  }
 }

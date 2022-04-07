@@ -1,0 +1,114 @@
+
+body{
+    background:deepskyblue;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    margin: 2em;
+}
+
+h1{
+    font-size: 8.5rem;
+    font-family: wayfinder-cf, serif;
+    font-weight: 300;
+    font-style: normal;
+    color:aliceblue;
+}
+
+h2 {
+    font-size: 3.5rem;
+    line-height: 1.2em;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    width: 20ch;
+}
+
+//add this to hide our placeholder 
+.hidden {
+  display: none !important;
+}
+
+/* what do you want your shelf to look like? play with line 27 if you want it to appear as a line */
+.shelf {
+  border-bottom: 10px solid black; 
+  margin-bottom: 2em;   
+  display: flex;
+  align-items: flex-end;
+  
+}
+
+/* styling the books on the shelf- play with lines 38-42 or delete them and comment in lines 43-47 if you want thin spines of books */
+.shelf .book-spine {
+  background: aliceblue;
+  color: salmon;
+  height: 300px;
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 2px;
+  margin-right: 2px; 
+/*   height: 300px;
+  width: fit-content; 
+  padding: 10px 0px; 
+  transform: rotate(180deg);
+  writing-mode: vertical-lr; */
+  line-height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.shelf .book-spine.active {
+  background: lime;
+}
+
+.shelf .book-spine:hover {
+  background: #ff0000;
+}
+
+.book-detail {
+  display: flex;
+  margin-top: 30px;
+}
+
+.book-detail .figure {
+  width: 200px;
+  flex: none;
+  margin-right: 30px;
+}
+
+.book-detail .cover-image {
+  width: 100%;
+/*   border: 5px solid black; */
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.book-detail .info {
+  max-width: 600px;
+}
+
+.book-detail .title {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.book-detail .description {
+  margin-top: 0.5em;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+
+/* make it responsive */
+@media (max-width: 600px) {
+  .book-detail {
+    flex-direction: column;
+  }
+  .book-detail .figure {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+}

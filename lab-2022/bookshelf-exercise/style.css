@@ -1,0 +1,212 @@
+@import url("https://use.typekit.net/ipr3avt.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fbfbfb;
+    font-size: 16px;
+    font-family: 'freight-sans-pro', Arial, Helvetica, sans-serif;
+}
+header {
+    margin-bottom: 3em;
+    border-bottom: 2px solid #272727;
+    top: 0;
+    position: sticky;
+    background-color: #fbfbfb;
+    z-index: 5;
+}
+h1 {
+    font-family: 'freight-sans-compressed-pro', 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+main {
+    margin: 0 auto 2em auto;
+    max-width: 70%;
+}
+a {
+    color: inherit;
+}
+a:hover {
+    transition: 0.2s ease-in-out;
+    color: rgb(244, 42, 42);
+}
+a::after {
+    content: ' ↗';
+    text-decoration: none;
+}
+
+/* ids */
+
+#nav {
+    margin: 0 auto;
+    padding: 1em 0 1.5em 0;
+    max-width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-caption {
+    font-family: 'freight-sans-compressed-pro', 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+#header-caption span {
+    position: relative;
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+}
+@keyframes wave {
+    0% {transform: translateY(3px);}
+    50% {transform: translateY(-3px);}
+    100% {transform: translateY(3px);}
+}
+#hide-books {
+    user-select: none;
+    display: inline-block;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    background-color: rgb(212, 212, 212);
+    border: 2px solid #272727;
+    box-shadow: 0.10rem 0.1rem #272727;
+    font-size: 1rem;
+    font-weight: 600;
+}
+#hide-books:active {
+    background-color: #fbfbfb;
+    box-shadow: 0 0 #272727;
+    transform: translateY(2px);
+}
+
+/* classes */
+
+.hidden {
+    display: none !important;
+}
+.shelf {
+    border-bottom: 10px solid #272727;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2em;
+}
+.shelf .book-spine {
+    background: #AFC97E;
+    color: #fbfbfb;
+
+    height: fit-content;
+    width: 30px;
+    padding: 10px 0px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    transform: rotate(180deg);
+
+    writing-mode: vertical-lr;
+    line-height: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+.shelf .book-spine.active {
+    background: rgb(244, 42, 42);
+}
+.shelf .book-spine:hover:not(.active) {
+    background: linear-gradient(270deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background-size: 1000% 1000%;
+
+    animation: slideBackground 2s ease infinite;
+}
+@keyframes slideBackground {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+.book-detail {
+    display: grid;
+    grid-template: "image desc desc" / 1fr 2fr;
+    border: 2px solid #272727;
+}
+.book-detail .figure {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book-detail .cover-image {
+    margin: 2em;
+    width: 65%;
+    height: auto;
+    border: 2px solid #272727;
+}
+.book-detail .info {
+    grid-area: desc;
+    border-left: 2px solid #272727;
+}
+.book-detail .title {
+    max-width: 600px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'freight-sans-compressed-pro', 'Arial Narrow', Arial, Helvetica, sans-serif;
+}
+.book-detail .author {
+    margin-top: 0.5em;
+    padding-bottom: 1em;
+    font-family: 'freight-sans-compressed-pro', 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-bottom: 2px dotted #272727;
+}
+.book-detail .description {
+    margin: 0.5em 0;
+    font-size: 2.3rem;
+    font-family: 'freight-sans-pro', Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    max-width: 600px;
+}
+.info {
+    background-color: #fbfbfb;
+    padding: 1.5em;
+}
+.more {
+    color: rgb(244, 42, 42);
+}
+
+@media (max-width: 600px) {
+    .book-detail .figure {
+        min-width: 90%;
+    }    
+}
+@media (max-width: 992px) {
+    main {
+        max-width: 80%;
+    }
+    #nav {
+        max-width: 80%;
+        justify-content: space-between;
+    }
+    #header-caption {
+        display: none;
+    }
+    .book-detail {
+        display: flex;
+        flex-direction: column;
+    }
+    .book-detail .info {
+        border-left: none;
+        border-top: 2px solid #272727;
+    }
+    .book-detail .description {
+        font-size: 2rem;
+    }
+    .book-detail .figure {
+        max-width: 60%;
+        height: auto;
+        margin: 2em auto;
+    }
+}

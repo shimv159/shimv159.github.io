@@ -1,0 +1,272 @@
+/*FONTS*/
+
+@font-face{
+	font-family: 'Ogg';
+	font-weight: normal;
+	font-style: normal;
+	src: url("assets/fonts/Ogg-Regular.woff2") format('woff2');
+}
+
+
+@font-face{
+	font-family: 'Ogg';
+	font-weight: normal;
+	font-style: italic;
+	src: url("assets/fonts/Ogg-RegularItalic.woff2") format('woff2');
+}
+
+@font-face{
+	font-family: 'Ogg';
+	font-weight: 500;
+	font-style: normal;
+	src: url("assets/fonts/Ogg-Medium.woff2") format('woff2');
+}
+
+@font-face{
+	font-family: 'Ogg';
+	font-weight: 500;
+	font-style: italic;
+	src: url("assets/fonts/Ogg-MediumItalic.woff2") format('woff2');
+}
+
+@font-face{
+	font-family: 'Ogg';
+	font-weight: bold;
+	font-style: normal;
+	src: url("assets/fonts/Ogg-Bold.woff2") format('woff2');
+}
+
+@font-face{
+	font-family: 'Ogg';
+	font-weight: bold;
+	font-style: italic;
+	src: url("assets/fonts/Ogg-BoldItalic.woff2") format('woff2');
+}
+
+/*STRUCTURE*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 100vh;
+	width: auto;
+}
+
+/*HOME PAGE*/
+
+#home{
+	background-color: #FF7C52;
+	height: 100%;
+}
+
+.home-page{
+	display: flex;
+	flex-direction: row;
+	padding: 2em;
+}
+
+.home-left{
+	flex-direction: column;
+	width: 60vw;
+}
+
+.home-right{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	margin-left: 13em;
+	border: 2px #F4ECE4 solid;
+	width: 20vw;
+	height: 86vh;
+	align-items: center;
+	overflow: scroll;
+}
+
+.home-image{
+	width: 90%;
+	padding: 1em;
+	height: auto;
+}
+
+.arrow{
+	padding-top: 2em;
+	width: 2%;
+}
+
+.home-banner-container{
+	width: 100vw;
+	height: 4vh;
+	background-color: #F4ECE4;
+	position: fixed;
+	bottom: 0;
+	overflow: hidden;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+	
+
+.scroll-text {
+	font-family: neue-haas-grotesk-text, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.2em;
+	color: #FF7C52;
+	animation: scroll-text 19s linear infinite;
+	overflow:hidden;
+	white-space: nowrap;
+	display: flex;
+	margin-top: 0.2em;
+}
+
+
+@keyframes scroll-text {
+	from {
+		transform: translateX(100vw); 
+	}
+	to {
+		transform: translateX(-100vw);
+	}
+}
+
+.home-banner-container:hover{
+	background-color: #FF7C52;
+}
+
+.scroll-text:hover{
+	color:#F4ECE4;
+}
+
+.scroll-text > a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.scroll-text > a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+
+h1{
+	font-family: neue-haas-grotesk-display,sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 5em;
+	width: 17ch;
+	line-height: 1em;
+	color: #F4ECE4;
+}
+
+.highlight-ogg{
+	font-family: 'Ogg';
+	font-weight: normal;
+	font-style: italic;
+	font-size: 1.5em;
+	letter-spacing: -0.06em;
+	line-height: 0.8em;
+	color: #F4ECE4;
+}
+
+/*GALLERY*/
+
+.gallery-page{
+	display: flex;
+	padding: 2em;
+	height: 100vh;
+	background-color: #F8F8F8;
+}
+
+
+.gallery-banner-container{
+	width: 100vw;
+	height: 4vh;
+	background-color: #FF7C52;
+	position: fixed;
+	top: 0;
+	overflow: hidden;
+	padding-left: 2em;
+	padding-right: 2em;
+	z-index: 2;
+}
+
+.gallery-scroll-text {
+	font-family: neue-haas-grotesk-text, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.2em;
+	color: #F4ECE4;
+	animation: gallery-scroll-text 19s linear infinite;
+	overflow:hidden;
+	white-space: nowrap;
+	display: flex;
+	margin-top: 0.2em;
+}
+
+@keyframes gallery-scroll-text {
+	from {
+		transform: translateX(100vw); 
+	}
+	to {
+		transform: translateX(-100vw);
+	}
+}
+
+.filter{
+	position: fixed;
+	border-bottom: 2px #C1C1C1 solid;
+	background-color: white;
+	z-index: 0;
+	width: 100vw;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 2.9em;
+	padding-bottom: 1em;
+}
+
+.filter-container{
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+}
+
+h2{
+	font-family: neue-haas-grotesk-display,sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.3em;
+	color: black;
+}
+
+.filter-category-container{
+	border-radius: 25px;
+	border: 2px solid black;
+	padding: 0.7em;
+	width: 6em;
+	height: 1vh;
+	line-height: 0.5em;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.filterby-container{
+	padding: 0.8em;
+	width: 6em;
+	height: 1vh;
+	line-height: 0.5em;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.icon{
+	height: 1.7vh;
+	padding-left: 0.6em;
+	display: flex;
+	justify-content: flex-end;
+	align-content: flex-end;
+	align-self: center;
+}
