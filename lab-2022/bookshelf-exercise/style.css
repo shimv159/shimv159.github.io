@@ -41,7 +41,7 @@ h1 {
 }
 main {
     margin: 0 auto 4em auto;
-    max-width: 70%;
+    max-width: 75%;
 }
 
 a{
@@ -55,7 +55,6 @@ a:hover{
 }
 
 
-/* ids */
 
 #nav {
     margin: 0 auto;
@@ -129,7 +128,7 @@ a:hover{
     margin-right: 0.8em;
     transform: rotate(180deg);
     writing-mode: vertical-lr;
-    line-height: 30px;
+    line-height: 2em;
     font-size: 1rem;
     cursor: pointer;
 }
@@ -231,58 +230,3 @@ a:hover{
         align-items: center;
     }
 }
-
-
-/* Extra small devices (phones, 600px and down) 
-@media only screen and (max-width: 600px) {}*/
-   /* #nav{
-        max-width: 30vw;
-        font-size: 0.5em;
-    }
-
-    h1{
-        font-size: 2rem;
-    }
-
-    main{
-        width: 100%;
-    }
-
-    .shelf{
-        max-width: 10vw;
-    }
-
-}
-
-
-    main {
-        max-width: 80%;
-    }
-    #nav {
-        max-width: 70%;
-        justify-content: space-between;
-    }
-    #header-caption {
-        display: none;
-    }
-    .book-detail {
-        display: flex;
-        flex-direction: column;
-    }
-    .book-detail .info {
-        border-left: none;
-        border-top: 2px solid #272727;
-    }
-    .book-detail .description {
-        font-size: 2rem;
-    }
-    .book-detail .figure {
-        max-width: 60%;
-        height: auto;
-        margin: 2em auto;
-    }
-
-
-
-
-}*/
