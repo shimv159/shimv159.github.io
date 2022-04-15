@@ -54,6 +54,9 @@
 body{
 	height: 100vh;
 	width: auto;
+	background-color: #F8F8F8;
+
+
 }
 
 /*HOME PAGE*/
@@ -97,6 +100,9 @@ body{
 	width: 2%;
 }
 
+.home-banner{
+}
+
 .home-banner-container{
 	width: 100vw;
 	height: 4vh;
@@ -136,7 +142,7 @@ body{
 	background-color: #FF7C52;
 }
 
-.scroll-text:hover{
+.home-banner-container:hover .scroll-text{
 	color:#F4ECE4;
 }
 
@@ -150,16 +156,6 @@ body{
 	color: inherit;
 }
 
-h1{
-	font-family: neue-haas-grotesk-display,sans-serif;
-	font-weight: 500;
-	font-style: normal;
-	font-size: 5em;
-	width: 17ch;
-	line-height: 1em;
-	color: #F4ECE4;
-}
-
 .highlight-ogg{
 	font-family: 'Ogg';
 	font-weight: normal;
@@ -170,13 +166,20 @@ h1{
 	color: #F4ECE4;
 }
 
+.highlight-ogg > a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.highlight-ogg > a:hover{
+	border-bottom: 2px solid #F4ECE4;
+}
+
 /*GALLERY*/
 
 .gallery-page{
-	display: flex;
 	padding: 2em;
 	height: 100vh;
-	background-color: #F8F8F8;
 }
 
 
@@ -189,7 +192,7 @@ h1{
 	overflow: hidden;
 	padding-left: 2em;
 	padding-right: 2em;
-	z-index: 2;
+	z-index: 4;
 }
 
 .gallery-scroll-text {
@@ -218,12 +221,15 @@ h1{
 	position: fixed;
 	border-bottom: 2px #C1C1C1 solid;
 	background-color: white;
-	z-index: 0;
+	z-index: 2;
 	width: 100vw;
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-top: 2.9em;
 	padding-bottom: 1em;
+}
+
+.filter:hover{
 }
 
 .filter-container{
@@ -232,24 +238,21 @@ h1{
 	gap: 1em;
 }
 
-h2{
-	font-family: neue-haas-grotesk-display,sans-serif;
-	font-weight: 500;
-	font-style: normal;
-	font-size: 1.3em;
-	color: black;
-}
-
 .filter-category-container{
 	border-radius: 25px;
 	border: 2px solid black;
 	padding: 0.7em;
-	width: 6em;
+	width: fit-content;
 	height: 1vh;
 	line-height: 0.5em;
 	display: flex;
 	justify-content: center;
 	align-content: center;
+}
+
+.filter-category-container:hover{
+	cursor: pointer;
+	background-color: #E4E4E4;
 }
 
 .filterby-container{
@@ -269,4 +272,261 @@ h2{
 	justify-content: flex-end;
 	align-content: flex-end;
 	align-self: center;
+}
+
+.button-icon{
+	height: 1.7vh;
+	display: flex;
+	justify-content: flex-end;
+	align-content: flex-end;
+	align-self: center;
+	margin: 0.5rem auto;
+}
+
+
+.button-shape{
+	width: 1em;
+	height: 1em;
+	border: 2px solid #C1C1C1;
+}
+
+.button-shape:hover{
+	border-radius: 50px;
+	transition: 0.4s ease-in;
+	cursor: pointer;
+	background-color: #E4E4E4;
+
+}
+
+
+
+/*GRIDS*/
+
+.item1 {
+	grid-area: column1;
+
+}
+
+.item1-expanded {
+	grid-area: column1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-y: scroll;
+	height: 48vw;
+	gap: 30px;
+/*	border: 1.5px #C1C1C1 solid;
+*/}
+
+.item1-expanded > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.item2 { grid-area: column2; }
+.item3 { grid-area: column3; }
+.item4 {
+	grid-area: column4;
+	border: 1.5px #C1C1C1 solid;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'column1 column2 column3';
+    gap: 1em;
+    width: 80vw;
+    height: auto;
+/*    background-color: lavender;
+*/    padding: 5em;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.grid-container > div {
+/*	background-color: lightgray;
+*/	text-align: center;
+	padding: 1.25rem 0;
+	font-size: 1.875rem;
+}
+
+.grid-container-expansion{
+ 	display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'column1 column4';
+    gap: 1em;
+    width: 80vw;
+    height: 40vw;
+	padding: 6.1em 5em 1em 5em;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.grid-container-expansion > div {
+/*	background-color: lightgray;
+*/	text-align: left;
+	padding: 1.25rem;
+	font-size: 1.875rem;
+}
+
+
+/*NESTED GRID 1*/
+
+.grid-nested-expansion{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'info1 info2';
+    gap: 0.5em;
+    /* background-color: lavender; */
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    padding: 0.2em 1em 0.2em 2em;
+}
+
+.nested-item1{
+	grid-area: info1;
+}
+
+.nested-item2{
+	grid-area: info2;
+}
+
+.grid-nested-expansion > div {
+/*	background-color: pink;
+*/	text-align: left;
+	padding: 1.25rem 0;
+}
+
+/*NESTED GRID 2*/
+
+.grid-nested{
+	display: grid;
+    /* grid-template-columns: 2fr 1fr; */
+    grid-template-areas: 'side1 side2';
+    gap: 0.5em;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.nested-photo{
+	grid-area: side1;
+}
+
+.nested-button{
+	grid-area: side2;
+	display: grid;
+	justify-content: end;
+}
+
+.grid-nested > div {
+/*	background-color: seagreen;
+*/	text-align: left;
+}
+
+
+
+
+/*SCROLL*/
+
+
+#style-8::-webkit-scrollbar-track{
+/*	border: 1px solid black;
+*/	background-color: #E4E4E4;
+}
+
+#style-8::-webkit-scrollbar{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-8::-webkit-scrollbar-thumb{
+	background-color: #C4C4C4;	
+}
+
+
+
+
+
+
+
+
+/*IMAGE TREATMENTS*/
+
+.photo{
+	max-width: 25vh;
+	justify-content: center;
+	padding-bottom: 0.2em;
+}
+
+.photo:hover{
+	border-radius: 25px;
+	transition: 0.3s;
+	cursor: zoom-in;
+}
+
+.photo-expanded{
+	max-width: 50vh;
+}
+
+.photo-expanded:hover{
+	transform: scale(1.05);
+	transition: 0.3s ease-out;
+	cursor: zoom-in;
+}
+
+
+
+/*HEADINGS*/
+
+h1{
+	font-family: neue-haas-grotesk-display,sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 5em;
+	width: 17ch;
+	line-height: 1em;
+	color: #F4ECE4;
+}
+
+
+h2{
+	font-family: neue-haas-grotesk-text, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.5rem;
+}
+
+h3{
+	font-family: neue-haas-grotesk-text, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.2rem;
+}
+
+h4{
+	font-family: neue-haas-grotesk-text, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 0.9rem;
+	padding-top: 0.2em;
+}
+
+p{
+	font-family: neue-haas-grotesk-text, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 0.9rem;
+	padding-top: 0.2em;	
+}
+
+.filter-text{
+	font-family: neue-haas-grotesk-display,sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.3em;
+	color: black;
 }
