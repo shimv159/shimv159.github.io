@@ -175,6 +175,17 @@ body{
 
 /*GALLERY*/
 
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
 .gallery-page{
 	padding: 2em;
 	height: 100vh;
@@ -253,6 +264,21 @@ body{
 	background-color: #E4E4E4;
 }
 
+.filter-category-container-filled{
+	border-radius: 25px;
+	border: 2px solid black;
+	padding: 0.7em;
+	width: fit-content;
+	height: 1vh;
+	line-height: 0.5em;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	background-color: black;
+	color: white;
+}
+
+
 .filterby-container{
 	padding: 0.8em;
 	width: 6em;
@@ -262,6 +288,8 @@ body{
 	justify-content: center;
 	align-content: center;
 }
+
+
 
 .icon{
 	height: 1.7vh;
@@ -469,7 +497,7 @@ body{
 }
 
 .photo:hover{
-	border-radius: 10%;
+	border-radius: 20%;
 	transition: 0.3s;
 	cursor: zoom-in;
 }
@@ -534,5 +562,4 @@ p{
 	font-weight: 500;
 	font-style: normal;
 	font-size: 1.3em;
-	color: black;
 }
