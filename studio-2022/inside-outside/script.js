@@ -1,60 +1,87 @@
 console.log("WE ARE NOT GOING ANYWHERE!");
 
-// load the airtable library, call it "Airtable"
 var Airtable = require("airtable");
 console.log(Airtable);
 
-// use the airtable library to get a variable that represents one of our bases
-// YOU WILL NEED TO REPLACE THIS API KEY AND BASE WITH YOUR UNIQUE INFO, FOUND IN AIRTABLE
 var base = new Airtable({apiKey: 'keyWT5PjLBhwUlwmK'}).base('appomTPLYKfa4K1mD');
 
-//get the "books" table from the base, select ALL the records
-// specify the functions that will receive the data
-base("chinese-americans").select({}).eachPage(gotPageOfCA, gotAllCA);
+base("chineseamericans").select({maxRecords: 89, view:"main"}).eachPage(gotImage, gotAllImages);
 
-// an empty array to hold our book data
 const chineseamericans = [];
 
-// callback function that receives our data
-function gotPageOfCA(records, fetchNextPage) {
-  console.log("gotPageOfCA()");
-  // add the records from this page to our books array
-  books.push(...records);
-  // request more pages
+//function that receives our data
+function gotImage(records, fetchNextPage){
+  console.log("gotImage()");
+  //add the records from this image to our books array
+  chineseamericans.push(...records);
+  //request more pages
   fetchNextPage();
 }
 
-// callback function that is used when all pages are loaded
-function gotAllBooks(err) {
-  console.log("gotAllBooks()");
+//call function
+function gotAllImages(err) {
+  console.log("gotAllImages()");
 
-  // report an error> this is what shows up if there's a problem
-  if (err) {
+  //report an error
+  if (err){
     console.log("error loading books");
     console.error(err);
     return;
   }
 
-  // call functions to log and show the books
-  consoleLogBooks();
-  showBooks();
+  //call functions to long and show books
+  showImages();
 }
 
-// just loop through the books and console.log them
-function consoleLogBooks() {
-  console.log("consoleLogBooks()");
-  books.forEach((book) => {
-    console.log("Book:", book);
+function showImages(){
+  console.log("showImages()");
+
+  const gridContainer = document.querySelector(".grid-container");
+
+  chineseamericans.forEach((img) => {
+    const a = document.createElement("a");
+    const div = document.createElement("div");
+    const imgTag = document.createElement("img");
+    const h3 = document.createElement("h3");
+    const h4 = document.createElement("h4");
+
+    a.appendChild(div);
+    div.classList.add("item1");
+    a.classList.add("item-container");
+    // a.href = "gallery-expanded.html";
+    
+    div.appendChild(imgTag);
+    imgTag.classList.add("photo");
+    imgTag.src = img.fields.Images[0].url;
+
+
+    div.appendChild(h3);
+    h3.classList.add("year");
+    h3.innerText = img.fields.Year;
+
+    div.appendChild(h4);
+    h4.classList.add("name");
+    h4.innerText = img.fields.Name;
+
+    // showImage(img);
+    gridContainer.appendChild(a);
   });
 }
 
-// loop through the books, create an h2 for each one, and add it to the page
-function showBooks() {
-  console.log("showBooks()");
-  books.forEach((book) => {
-    const h2 = document.createElement("h2");
-//     try changing 'title' below to 'description' and your description will show instead of your title > you can put any of your database columns that contain TEXT here(bc it's an H2 text field), make sure you use EXACT spelling 
-    h2.innerText = book.fields.title;
-    document.body.appendChild(h2);
-  });
-}
+// function showImage(img) {
+//   console.log("showImages()", img);
+
+//   //find the book detail element
+//   const imageDetail = document.querySelector(".item1 ");
+
+//   // //populate template
+//   imageDetail.getElementsByClassName("name")[0].innerText = img.fields.Name;
+//   imageDetail.getElementsByClassName("year")[0].innerText = img.fields.Year;
+//   imageDetail.getElementsByClassName("photo")[0].src = img.fields.Images[0].url;
+
+// }
+
+
+
+
+///////////////
