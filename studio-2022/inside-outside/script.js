@@ -68,20 +68,6 @@ function showImages(){
   });
 }
 
-// function showImage(img) {
-//   console.log("showImages()", img);
-
-//   //find the book detail element
-//   const imageDetail = document.querySelector(".item1 ");
-
-//   // //populate template
-//   imageDetail.getElementsByClassName("name")[0].innerText = img.fields.Name;
-//   imageDetail.getElementsByClassName("year")[0].innerText = img.fields.Year;
-//   imageDetail.getElementsByClassName("photo")[0].src = img.fields.Images[0].url;
-
-// }
-
-
 
 
 ///////////////
