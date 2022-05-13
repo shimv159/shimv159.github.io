@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Card Constructor</title>
+	 <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form name="myConstruct">
+  <select name="f_class">
+    <option value="0">Common</option>
+    <option value="1">Uncommon</option>
+    <option value="2">Rare</option>
+    <option value="3">Epic</option>
+    <option value="4">Legendary</option>
+  </select>
+  <input name="f_title" type="text" placeholder="Title" maxlength="15" />
+  <!--<input name="f_url" type="url" placeholder="Image url" />-->
+  <label for="customImage">Select image</label>
+  <input id="customImage" name="f_url" type="file" accept="image/jpg image/jpeg image/png" />
+  <label>Add Icons:
+    <a href="https://fonts.google.com/icons" target="_blank" class="material-icons">help</a>
+    <span class="tooltip">
+      <h4>Step 1:</h4>
+      <p>Click the help icon to open up Google icons.</p>
+      <h4>Step 2:</h4>
+      <p>Type in the icon name and click add.</p>
+      <h4>To remove an icon:</h4>
+      <p>Simply click the icon in the list.</p>
+    </span>
+  </label>
+  <input name="f_icon" type="text" />
+  <input name="f_add" type="button" value="Add" />
+  <input name="f_score" type="number" placeholder="Score 0-99" maxlength="2" min="0" max="99" />
+  <input name="f_submit" type="button" value="Apply" />
+</form>
+
+<ul id="placeholder"></ul>
+
+<div class="card-container">
+  <div id="Frame" class="frame common">
+    <h2 id="Title" class="title common">HTML</h2>
+    <div id="Card" class="card">
+    </div>
+    <ul id="Attributes" class="attr">
+    </ul>
+    <div id="Score" data-val="0" class="score common"></div>
+  </div>
+</div>
+<script src="construct.js"></script>
+</body>
+<!-- Original code by Tulula Smith, https://codepen.io/Tulula/pen/BaJEEgE
+ -->
+ </html>

@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Yanone+Kaffeesatz:wght@200;400&display=swap");
+
+:root {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {background: #eee;}
+
+.card-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.frame {
+  margin: 10px 4px 10px 0;
+  width: 200px;
+  height: 300px;
+  border: solid 1px #444;
+  border-radius: 6px;
+  box-shadow:
+    inset 0 4px rgba(255, 255, 255, 0.3),
+    inset 0 -4px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+.frame:last-of-type {
+  margin: 10px 0 10px 0;
+}
+
+.frame:hover {transform: translateY(-15px);}
+
+.card {
+  position: absolute;
+  width: 180px;
+  height: 280px;
+  background: #dfdfdf;
+  background-size: cover;
+  background-position: center center;
+  left: 10px;
+  top: 10px;
+  border: solid 1px #444;
+  border-radius: 4px;
+  font-weight: 600;
+  text-shadow: 0 1px rgba(255, 255, 255, 1);
+  color: #444;
+  overflow: hidden;
+}
+
+.frame h2 {
+  padding: 4px;
+  width: 93%;
+  top: 10px;
+  left: 8px;
+  border: solid 1px #222;
+  border-radius: 4px;
+  box-shadow:
+    inset 0 2px rgba(255, 255, 255, 0.3),
+    inset 0 -2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 20px;
+  z-index: 99;
+}
+
+.frame ul.attr, .frame .score {
+  position: absolute;
+  bottom: 0;
+  list-style: none;
+}
+
+.frame ul.attr {right: 8px;}
+
+.frame ul.attr li {
+  display: block;
+  margin-bottom: 4px;
+  width: 30px;
+  height: 30px;
+  border: solid 1px #444;
+  border-right: solid 1px transparent;
+  border-radius: 4px 0 0 4px;
+  text-align: center;
+  box-shadow:
+    inset 0 2px rgba(255, 255, 255, 0.5),
+    inset 0 -1px rgba(0, 0, 0, 0.3);
+  color: #eee;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+  cursor: default;
+  z-index: 99;
+}
+
+.frame ul.attr li span {line-height: 30px;}
+
+.frame ul li:last-of-type {margin-bottom: 13px;}
+
+.frame .score {
+  width: 56px;
+  height: 56px;
+  left: 0;
+  bottom: 0;
+  border: solid 1px #333;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 2px rgba(255, 255, 255, 0.3),
+    inset 0 -2px rgba(0, 0, 0, 0.3);
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 38px;
+  text-align: center;
+  text-shadow: 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.frame .score:before {
+  position: absolute;
+  display: block;
+  content: attr(data-val);
+  height: 48px;
+  width: 48px;
+  left: 3px;
+  top: 3px;
+  background: #ddd;
+  line-height: 48px;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 3px 13px rgba(0, 0, 0, 0.5),
+    inset 0 -3px 13px rgba(255, 255, 255, 0.8);
+}
+
+.frame .score:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  right: 10px;
+  top: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.legendary {
+  background: #fab814;
+  box-shadow:
+    inset 0 4px rgba(255, 255, 255, 0.3),
+    inset 0 -4px rgba(0, 0, 0, 0.3),
+    0 10px 15px #deb212,
+    0 -10px 15px #deb212;
+}
+
+.epic {
+  background: #f525b0;
+  box-shadow:
+    inset 0 4px rgba(255, 255, 255, 0.3),
+    inset 0 -4px rgba(0, 0, 0, 0.3),
+    0 12px 15px -10px purple,
+    0 -12px 15px -10px purple;
+}
+
+.rare {
+  background: #3651f6;
+  box-shadow:
+    inset 0 4px rgba(255, 255, 255, 0.3),
+    inset 0 -4px rgba(0, 0, 0, 0.3),
+    0 8px 15px -10px blue,
+    0 -8px 15px -10px blue;
+}
+
+.title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.7);
+}
+
+.uncommon {background: #0eab25;}
+.common {background: #bbb;}
+.title.legendary {background: #e38e07;}
+.title.epic {background: #d445de;}
+.title.rare {background: #3e26de;}
+.title.uncommon {background: #25c206;}
+.title.common {background: #d1bcc7;}
+
+form {
+  position: absolute;
+  padding: 4px;
+  width: 110px;
+  top: 4px;
+  left: 4px;
+  background: #555;
+  border-radius: 4px;
+  z-index: 99;
+}
+
+form input,
+form select,
+form label[for="customImage"] {
+  margin-bottom: 4px;
+  padding: 3px;
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+  z-index: 99;
+}
+
+form input[type="file"] {
+  display:none;
+}
+
+form label[for="customImage"] {
+  display:block;
+  text-align:center;
+}
+
+textarea {width: auto;}
+
+form input[type="button"],
+form label[for="customImage"] {
+  margin: 0 0 5px 0;
+  background: #333;
+  color: #eee;
+  box-shadow: 0 2px 0 #222;
+}
+
+form input[type="button"]:active,
+form label[for="customImage"]:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+form input:last-of-type {margin: 0 0 2px 0;}
+
+form label {
+  margin: 5px 0 3px 0;
+  color: #eee;
+  font-size: 13px;
+}
+
+form a.material-icons {
+  float: right;
+  font-size: 14px;
+  color: #ddd;
+  text-decoration: none;
+}
+
+form a.material-icons:hover ~ span.tooltip {display: block;}
+
+span.tooltip {
+  position: absolute;
+  display: none;
+  padding: 4px;
+  top: -80px;
+  left: 110px;
+  width: 120px;
+  border-radius: 4px;
+  font-size: 12px;
+  background: #444;
+}
+
+.tooltip p {
+  margin-block-start: 4px;
+  margin-block-end: 8px;
+}
+
+.tooltip p:last-of-type {
+  margin-block-end: 0;
+}
+
+#placeholder {
+  position: absolute;
+  top: 240px;
+  z-index: 80;
+}
+
+#placeholder li {
+  margin-top: 1px;
+  width: 30px;
+  height: 30px;
+  background: #333;
+  border-radius: 0 4px 4px 0;
+  color: #eee;
+  font-size: 30px;
+  transition: all 0.2s;
+  cursor: no-drop;
+}
+
+#placeholder li:hover {width: 65px;}
+
+#placeholder li:after {
+  position: absolute;
+  content: "x";
+  display: block;
+  width: 18px;
+  height: 18px;
+  top: 6px;
+  right: 6px;
+  background: #444;
+  border-radius: 3px;
+  color: #ddd;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.2s 0.1s;
+}
+
+#placeholder li:hover:after {opacity: 1;}
